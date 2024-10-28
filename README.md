@@ -1,7 +1,10 @@
 ![image](https://github.com/user-attachments/assets/fbb7e203-12b5-44bc-8bd0-bd7a45dfef00)
 
+TLDR; 
+This adds a folder for the box and adds it to your etc/host file then runs an intial nmap scans and saves them to a folder called scans in the folder named after the box.
 
-This tool is a simple command-line script designed for penetration testing and network reconnaissance. Here’s a brief description of its functionality:
+
+This tool is a simple command-line script designed for Hackthebox it Automates the first steps you would normally take when staring a box on HTB. Here’s a brief description of its functionality:
 
 Tool Overview
 User Input: The script prompts the user for the target box name and its corresponding IP address.
