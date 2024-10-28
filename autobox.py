@@ -4,7 +4,7 @@ from termcolor import colored
 
 def print_ascii_art():
     # Prints ASCII art for the tool's branding
-    art = """
+    art = r"""
     ,---,                        ___                  ,---,.                       
     '  .' \                     ,--.'|_              ,'  .'  \                      
     /  ;    '.             ,--,  |  | :,'    ,---.  ,---.' .' |   ,---.              
@@ -114,4 +114,9 @@ def main():
     box_name = get_user_input("Enter the box name: ")  # Get box name from user
     ip_address = get_user_input("Enter the IP address: ")  # Get IP address from user
 
-    create_folder_structure(box_name)  # Create nec
+    create_folder_structure(box_name)  # Create necessary folder structure
+    update_hosts_file(box_name, ip_address)  # Update hosts file with the new entry
+    run_nmap_scan(box_name, ip_address)  # Run the Nmap scan
+
+if __name__ == "__main__":
+    main()  # Execute the main function when the script is run
