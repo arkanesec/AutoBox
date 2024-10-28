@@ -25,8 +25,6 @@ def print_ascii_art():
 def print_notice():
     notice = """
     #############################################
-    #                                           #
-    #         REMEMBER TO HACK NAKED !!!!       #
     #            must run as root               #
     #############################################
     """
